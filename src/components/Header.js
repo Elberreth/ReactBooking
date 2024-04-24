@@ -1,16 +1,27 @@
 // Header.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css'; 
+
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/booking-list">Booking List</Link></li>
-          <li><Link to="/booking-form">Book Now</Link></li>
-          <li><Link to="/cancel-booking">Cancel Booking</Link></li>
+        <ul className="navbar">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/booking-list">Booking List</Link>
+          </li>
+          <li>
+            <Link to="/cancel-booking">Cancel Booking</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -18,3 +29,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
